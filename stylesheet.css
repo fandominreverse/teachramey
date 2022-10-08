@@ -13,14 +13,3 @@
         "footer footer footer footer footer footer";
     justify-content: space-between;
 }
-
-.header {
-    border-radius: 14px;
-    background: #360400;
-    color: #E46E65;
-    font-family: Mandhor-ALEmp;
-    font-size: 3rem;
-    grid-area: header;
-    text-align: center;
-    padding: .1rem;
-}
