@@ -36,53 +36,9 @@
     text-align: center;
 }
 
-.picture {
-    justify-content: space-between;
-}
-
-.IndexContent {
-    padding: -1px;
-}
-
-.AboutContent {
-    padding: 20px;
-}
-
-.a {
-    border-style: dashed;
-    border-radius: 1em;
-}
-
 .TextWrap {
     float: left;
     margin: 10px;
-}
-
-ul {
-    display: table;
-    margin: 0 auto;
-    text-align: left;
-}
-
-li {
-    text-align: left;
-}
-
-.button {
-    background-color: #A7261C;
-    border-radius: 14px;
-    border: none;
-    color: #E46E65;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    width: auto;
-    overflow: auto;
 }
 
 .box1 {
