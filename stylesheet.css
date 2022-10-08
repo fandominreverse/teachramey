@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #6a3dc4;
+    background-color: #47346b;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1rem 4vh 4vh 0.3fr;
@@ -15,8 +15,8 @@
 }
 .header {
     border-radius: 14px;
-    background: #360400;
-    color: #E46E65;
+    background: #8065b5;
+    color: white;
     font-family: Mandhor-ALEmp;
     font-size: 3rem;
     grid-area: header;
