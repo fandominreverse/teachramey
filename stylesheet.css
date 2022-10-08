@@ -1,3 +1,321 @@
-﻿body
-{
+﻿body {
+    background-color: #2A0300;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1rem 4vh 4vh 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header header"
+        "nav nav nav nav nav nav"
+        "box1 content content content content box2"
+        "box1 content content content content box2"
+        "footer footer footer footer footer footer";
+    justify-content: space-between;
+}
+
+.footer {
+    border-radius: 14px;
+    background: #360400;
+    color: #E46E65;
+    grid-area: footer;
+    padding: 4px;
+    text-align: right;
+    max-height: 5vh;
+}
+
+.content {
+    grid-area: content;
+    background-color: #E46E65;
+    border: solid;
+    border-color: #E46E65;
+    border-radius: 14px;
+    color: #460603;
+    float: right;
+    padding: 0px;
+    text-align: center;
+}
+
+.picture {
+    justify-content: space-between;
+}
+
+.IndexContent {
+    padding: -1px;
+}
+
+.AboutContent {
+    padding: 20px;
+}
+
+.a {
+    border-style: dashed;
+    border-radius: 1em;
+}
+
+.TextWrap {
+    float: left;
+    margin: 10px;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li {
+    text-align: left;
+}
+
+.button {
+    background-color: #A7261C;
+    border-radius: 14px;
+    border: none;
+    color: #E46E65;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: auto;
+    overflow: auto;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: #A7261C;
+    border: solid;
+    border-color: #A7261C;
+    border-radius: 14px;
+    color: #460603;
+    text-align: center;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: #A7261C;
+    border: solid;
+    border-color: #A7261C;
+    border-radius: 14px;
+    color: #460603;
+    text-align: center;
+}
+
+.header {
+    border-radius: 14px;
+    background: #360400;
+    color: #E46E65;
+    font-family: Mandhor-ALEmp;
+    font-size: 3rem;
+    grid-area: header;
+    text-align: center;
+    padding: .1rem;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #460603;
+    border: solid;
+    border-color: #460603;
+    border-radius: 14px;
+    color: #E46E65;
+    text-align: center;
+}
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #460603;
+    border-radius: 14px;
+    overflow: auto;
+    padding: 1px;
+}
+
+    /* Navbar links */
+    .navbar a {
+        float: right;
+        text-align: center;
+        padding: 7px;
+        color: #E46E65;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        /* Navbar links on mouse-over */
+        .navbar a:hover {
+            background-color: #E46E65;
+            color: #A7261C;
+            border-radius: 14px;
+        }
+
+/* Current/active navbar link */
+.active {
+    background-color: #A7261C;
+    border-radius: 14px;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width:1799px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 6.5rem 3rem 15vh 2.85fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "box1 content content content content box2"
+            "box1 content content content content box2"
+            "box1 content content content content box2"
+            "footer footer footer footer footer footer";
+        justify-content: space-between;
+        min-height: 100vh;
+        max-height: auto;
+    }
+}
+
+@media only screen and (min-width:1800px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 7rem 3rem 15vh 2.9fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "box1 content content content content box2"
+            "box1 content content content content box2"
+            "box1 content content content content box2"
+            "box1 content content content content box2"
+            "footer footer footer footer footer footer";
+        justify-content: space-between;
+        min-height: 98vh;
+        max-height: auto;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 300px) and (max-width: 1199px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 7rem 3rem 50vh 40rem 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "box1 content content content content content"
+            "box2 content content content content content"
+            "box2 content content content content content"
+            "box2 content content content content content"
+            "footer footer footer footer footer footer";
+        justify-content: space-between;
+        min-height: 100vh;
+        max-height: auto;
+    }
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+        padding: 8px;
+    }
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #E46E65;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 300px) and (max-width: 899px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #A7261C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #460603;
+    }
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 1em;
+    background-color: #db645b;
+    padding: 20px;
 }
