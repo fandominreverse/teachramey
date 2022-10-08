@@ -1,3 +1,25 @@
 ﻿body {
-    background-color: mediumvioletred;
+    background-color: #2A0300;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1rem 4vh 4vh 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header header"
+        "nav nav nav nav nav nav"
+        "box1 content content content content box2"
+        "box1 content content content content box2"
+        "footer footer footer footer footer footer";
+    justify-content: space-between;
+}
+.header {
+    border-radius: 14px;
+    background: #360400;
+    color: #E46E65;
+    font-family: Mandhor-ALEmp;
+    font-size: 3rem;
+    grid-area: header;
+    text-align: center;
+    padding: .1rem;
 }
