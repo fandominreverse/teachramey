@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: ##733dc4;
+    background-color: #2A0300;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1rem 4vh 4vh 0.3fr;
@@ -87,7 +87,7 @@ li {
 
 .box1 {
     grid-area: box1;
-    background-color: #A7261C;
+    background-color: #733dc4;
     border: solid;
     border-color: #A7261C;
     border-radius: 14px;
